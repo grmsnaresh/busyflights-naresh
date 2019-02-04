@@ -16,7 +16,7 @@ Flight search API path:
   /flights/search
 
 Sample request that is exptected to return a result of 4 flights:
-http://localhost:8080/busyflights/api/search?origin=LHR&destination=AMS&departureDate=2017-02-01&returnDate=2017-02-10&numberOfPassengers=1
+ http://localhost:8080/busyflights/api/search?origin=LHR&destination=AMS&departureDate=2018-05-01&returnDate=2019-02-10&numberOfPassengers=4
 * I have provided a fake API for crazyAir and toughJet, that will be consumed by our service.
 
 The mock json list having the same attributes expected from the real service
