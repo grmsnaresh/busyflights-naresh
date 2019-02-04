@@ -1,0 +1,22 @@
+[
+  {
+    "carrier": "Lufthansa",
+    "basePrice": 199.99,
+    "tax": "10",
+    "discount": "20",
+    "departureAirportName": "AMS",
+    "arrivalAirportName": "LHR",
+    "outboundDateTime": "2017-11-01T01:30:00",
+    "inboundDateTime": "2018-02-10T02:30:00"
+  },
+  {
+    "carrier": "Jet Airways",
+    "basePrice": 150,
+    "tax": "10",
+    "discount": "10",
+    "departureAirportName": "AMS",
+    "arrivalAirportName": "LHR",
+    "outboundDateTime": "2017-11-01T04:00:00",
+    "inboundDateTime": "2018-02-10T05:00:00"
+  }
+]

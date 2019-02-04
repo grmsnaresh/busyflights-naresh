@@ -1,0 +1,13 @@
+logging:
+  level:
+    com.travix.medusa: info
+
+server:
+  port: 8080
+  contextPath: /busyflights
+
+supplier:
+  endpoint:
+    search:
+      mockApi: true
+
