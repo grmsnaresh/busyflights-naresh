@@ -25,13 +25,9 @@ The mock json list having the same attributes expected from the real service
 Browse BusyFlight API documentation on:
   http://localhost:8080/busyflights/swagger-ui.html
 
-Sample from application health services:
-  http://localhost:8080/busyflights/health
-
 * Further additions would be:
 - Add more test cases
-- Adding custom error messages and codes for our API.
-- Externalize application configuration in order to be able to change it without the need to unwrap the jar.
+- Integrate with the real API and custom error handling.
 
 
 **Background:**
