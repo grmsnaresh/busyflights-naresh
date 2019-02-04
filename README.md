@@ -26,7 +26,7 @@ Browse BusyFlight API documentation on:
   http://localhost:8080/busyflights/swagger-ui.html
 
 Sample from application health services:
-  http://localhost:8080/busyFlights/health
+  http://localhost:8080/busyflights/health
 
 * Further additions would be:
 - Add more test cases

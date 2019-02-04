@@ -10,7 +10,7 @@ import java.util.function.DoubleFunction;
  * @author grmsnaresh
  *
  */
-public class MathUtils {
+public class CaliculationUtils {
 
 	/**
 	 * A function to round double number decimals into.

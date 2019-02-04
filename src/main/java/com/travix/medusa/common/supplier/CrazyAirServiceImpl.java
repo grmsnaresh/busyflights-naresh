@@ -8,7 +8,7 @@ import com.travix.medusa.common.type.Airline;
 import com.travix.medusa.common.type.AirportCodes;
 import com.travix.medusa.common.type.CabinClass;
 import com.travix.medusa.common.type.Supplier;
-import com.travix.medusa.common.util.MathUtils;
+import com.travix.medusa.common.util.CaliculationUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +46,7 @@ public class CrazyAirServiceImpl implements SupplierService {
 		}
 		return response.stream().
 				map(ca -> new Flight(ca.getAirline(), Supplier.CRAZY_AIR,
-						MathUtils.roundToTwo.apply(ca.getPrice()),
+						CaliculationUtils.roundToTwo.apply(ca.getPrice()),
 						ca.getDepartureAirportCode(), ca.getDestinationAirportCode(),
 						ca.getDepartureDate(), ca.getArrivalDate())).
 				collect(Collectors.toList());

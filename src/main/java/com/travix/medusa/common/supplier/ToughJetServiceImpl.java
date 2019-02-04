@@ -7,7 +7,7 @@ import com.travix.medusa.common.dto.FlightSearch;
 import com.travix.medusa.common.type.Airline;
 import com.travix.medusa.common.type.AirportCodes;
 import com.travix.medusa.common.type.Supplier;
-import com.travix.medusa.common.util.MathUtils;
+import com.travix.medusa.common.util.CaliculationUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +47,7 @@ public class ToughJetServiceImpl implements SupplierService {
 
 		return toughJets.stream().
 				map(tj -> new Flight(tj.getCarrier(), Supplier.TOUGH_JET,
-						MathUtils.roundToTwo.apply(calculatePrice(tj.getBasePrice(), tj.getTax(), tj.getDiscount())),
+						CaliculationUtils.roundToTwo.apply(calculatePrice(tj.getBasePrice(), tj.getTax(), tj.getDiscount())),
 						tj.getDepartureAirportName(), tj.getArrivalAirportName(),
 						tj.getOutboundDateTime(), tj.getInboundDateTime())).
 				collect(Collectors.toList());
